@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Personal Blog</h1>
+        <form id="postForm" novalidate>
+            <label for="titleInput">Title</label>
+            <input type="text" id="titleInput" required>
+            <span id="titleError" class="error"></span>
+            <label for="contentInput">Content</label>
+            <textarea id="contentInput" required></textarea>
+            <span id="contentError" class="error"></span>
+            <button type="submit">Save Post</button>
+        </form>
+        <h2>Your Posts</h2>
+        <div id="postContainer"></div>
+    </main>
+</body>
+</html>
